@@ -1,0 +1,89 @@
+{
+    "score": 0.06522123515605927,
+    "matches": [
+        {
+            "job_responsibility": "Analyze, design, and develop business applications.",
+            "cv_responsibility": "Integrated multiple AI providers such as Ollama, OpenAI, and Gemini",
+            "similarity": 0.0,
+            "passed_Threshhold": false,
+            "Raw Similarity": 0.26092642545700073
+        },
+        {
+            "job_responsibility": "Gather and evaluate requirements for existing or proposed systems.",
+            "cv_responsibility": "Integrated multiple AI providers such as Ollama, OpenAI, and Gemini",
+            "similarity": 0.0,
+            "passed_Threshhold": false,
+            "Raw Similarity": 0.2585989832878113
+        },
+        {
+            "job_responsibility": "Customize and configure existing systems.",
+            "cv_responsibility": "Integrated multiple AI providers such as Ollama, OpenAI, and Gemini",
+            "similarity": 0.0,
+            "passed_Threshhold": false,
+            "Raw Similarity": 0.31138724088668823
+        },
+        {
+            "job_responsibility": "Prepare detailed flow charts and diagrams outlining system capabilities and processes.",
+            "cv_responsibility": "Integrated multiple AI providers such as Ollama, OpenAI, and Gemini",
+            "similarity": 0.0,
+            "passed_Threshhold": false,
+            "Raw Similarity": 0.238388791680336
+        },
+        {
+            "job_responsibility": "Perform functional design, internal QA, user acceptance testing, and end-user training.",
+            "cv_responsibility": "Integrated multiple AI providers such as Ollama, OpenAI, and Gemini",
+            "similarity": 0.0,
+            "passed_Threshhold": false,
+            "Raw Similarity": 0.24722573161125183
+        },
+        {
+            "job_responsibility": "Select authorized procedures and seek assistance for guideline deviations or unanticipated problems.",
+            "cv_responsibility": "Integrated multiple AI providers such as Ollama, OpenAI, and Gemini",
+            "similarity": 0.0,
+            "passed_Threshhold": false,
+            "Raw Similarity": 0.1707252562046051
+        },
+        {
+            "job_responsibility": "Maintain compatibility between systems.",
+            "cv_responsibility": "Integrated multiple AI providers such as Ollama, OpenAI, and Gemini",
+            "similarity": 0.0,
+            "passed_Threshhold": false,
+            "Raw Similarity": 0.3095073699951172
+        },
+        {
+            "job_responsibility": "Write and maintain system documentation.",
+            "cv_responsibility": "Implemented observability using Prometheus, Grafana, and Loki",
+            "similarity": 0.0,
+            "passed_Threshhold": false,
+            "Raw Similarity": 0.2525211572647095
+        },
+        {
+            "job_responsibility": "Conduct technical research on system upgrades for feasibility, cost, time, and compatibility.",
+            "cv_responsibility": "Implemented observability using Prometheus, Grafana, and Loki",
+            "similarity": 0.0,
+            "passed_Threshhold": false,
+            "Raw Similarity": 0.18485310673713684
+        },
+        {
+            "job_responsibility": "Test, maintain, and monitor computer programs and systems, including coordinating installations.",
+            "cv_responsibility": "Integrated multiple AI providers such as Ollama, OpenAI, and Gemini",
+            "similarity": 0.0,
+            "passed_Threshhold": false,
+            "Raw Similarity": 0.22717903554439545
+        },
+        {
+            "job_responsibility": "Provide staff and users assistance with computer-related problems.",
+            "cv_responsibility": "Designed and developed a secure AI orchestration platform supporting multiple AI providers",
+            "similarity": 0.0,
+            "passed_Threshhold": false,
+            "Raw Similarity": 0.17400552332401276
+        },
+        {
+            "job_responsibility": "Deploy and maintain containerized applications using Kubernetes.",
+            "cv_responsibility": "Containerized and deployed the platform using Docker Compose and Kubernetes",
+            "similarity": 0.7826548218727112,
+            "passed_Threshhold": true,
+            "Raw Similarity": 0.7826548218727112
+        }
+    ]
+}

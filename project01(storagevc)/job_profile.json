@@ -1,0 +1,27 @@
+{
+    "required_skills": [],
+    "preferred_skills": [],
+    "experience_years": 5.0,
+    "technologies": [
+        "object-oriented programming languages",
+        "client and server applications",
+        "ERP system",
+        "multimedia",
+        "Internet technology"
+    ],
+    "responsibilities": [
+        "Analyze, design, and develop business applications.",
+        "Gather and evaluate requirements for existing or proposed systems.",
+        "Customize and configure existing systems.",
+        "Prepare detailed flow charts and diagrams outlining system capabilities and processes.",
+        "Perform functional design, internal QA, user acceptance testing, and end-user training.",
+        "Select authorized procedures and seek assistance for guideline deviations or unanticipated problems.",
+        "Maintain compatibility between systems.",
+        "Write and maintain system documentation.",
+        "Conduct technical research on system upgrades for feasibility, cost, time, and compatibility.",
+        "Test, maintain, and monitor computer programs and systems, including coordinating installations.",
+        "Provide staff and users assistance with computer-related problems."
+    ],
+    "seniority": "Mid-Senior level",
+    "domains": []
+}

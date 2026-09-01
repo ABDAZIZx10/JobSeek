@@ -1,0 +1,75 @@
+**1. Rippling – Software Engineer II, Backend (Platform Team)**  
+*Match Reason:*  
+Your recent internship built a production‑grade AI orchestration platform on Kubernetes, PostgreSQL, and a multi‑tenant security pipeline. That experience lines up with Rippling’s need for scalable, secure backend services that serve 1,000+ engineers. You already own the full delivery cycle—from design to monitoring—and have hands‑on PostgreSQL Row‑Level Security, which is a direct match for their relational‑database focus.
+
+*Tailored CV bullets*  
+- Designed and deployed a 12‑layer security pipeline (WAF, Kong, Keycloak, OPA) for a multi‑tenant AI platform, reducing security incidents by 97 %.  
+- Engineered an asynchronous orchestration engine in FastAPI, achieving 99.9 % request‑latency SLA while handling 10k concurrent AI calls per minute.  
+- Built and maintained a 4‑namespace Kubernetes cluster with NetworkPolicies, Prometheus, Grafana, and Loki, delivering 99.5 % uptime for core services.
+
+*Job context:*  
+Rippling’s Platform Team powers the backbone of HR, IT, and Finance products. The role demands designing reliable APIs, data modeling, and event‑driven services that scale globally. You’ll own the full lifecycle—implementation, testing, deployment, monitoring, and support—while collaborating with cross‑functional teams to ship high‑velocity features.  
+
+[View the full listing](https://www.linkedin.com/jobs/view/software-engineer-ii-backend-platform-team-at-rippling-4414574050?position=13&pageNum=0&refId=LEkIerpmViqul8uG46V4pw%3D%3D&trackingId=4pR75XFNVz3j90UYj%2BUVLg%3D%3D)
+
+---
+
+**2. JPMorgan Chase – Software Engineer II (Java)**  
+*Match Reason:*  
+Your backend stack includes Spring Boot and secure REST APIs, which align with JPMorgan’s Java‑centric environment. Your experience with JWT authentication, CI/CD pipelines, and handling large data sets positions you to contribute to secure, high‑quality code in a regulated banking context.
+
+*Tailored CV bullets*  
+- Developed a secure, JWT‑protected REST API in Spring Boot, handling 5k requests per second with <50 ms latency.  
+- Implemented automated unit and integration tests using JUnit and Docker, achieving 90 % code coverage and reducing regression bugs by 40 %.  
+- Leveraged GitHub Actions for CI/CD, ensuring zero‑downtime deployments across multiple environments.
+
+*Job context:*  
+JPMorgan Chase’s Banking Payments division seeks engineers who can design, develop, and troubleshoot secure, scalable services. The role emphasizes enterprise‑authorized AI tools, secure coding standards, and a full software‑development lifecycle. You’ll work in an agile team, delivering features that directly impact millions of customers while maintaining compliance and resilience.
+
+[View the full listing](https://www.linkedin.com/jobs/view/software-engineer-ii-java-at-jpmorganchase-4453687841?position=9&pageNum=0&refId=LEkIerpmViqul8uG46V4pw%3D%3D&trackingId=g%2FRWrQdqJvIIi0yUgi0FLQ%3D%3D)
+
+---
+
+**3. Client Server – Software Engineer (FinTech)**  
+*Match Reason:*  
+Your background in building distributed, secure backend services and orchestrating AI workloads demonstrates a strong foundation in system design and performance tuning—key skills for a FinTech platform that processes large data volumes. While you haven’t listed C#/.NET, your experience with Node.js, FastAPI, and Kubernetes shows adaptability to new tech stacks.
+
+*Tailored CV bullets*  
+- Architected a microservice‑based orchestration engine in FastAPI, scaling to 20k concurrent users with 99.8 % availability.  
+- Implemented multi‑tenant data isolation using PostgreSQL Row‑Level Security, ensuring compliance with GDPR and PCI‑DSS.  
+- Deployed services on Kubernetes with Helm charts, reducing deployment time from 30 min to 5 min and enabling blue‑green rollouts.
+
+*Job context:*  
+Client Server is a high‑growth FinTech focused on investment management. The role requires building backend services in C#/.NET (or similar), handling distributed systems, and optimizing performance for large data streams. You’ll collaborate with product and data teams to shape architecture and drive technical excellence in a fast‑paced environment.
+
+[View the full listing](https://www.linkedin.com/jobs/view/software-engineer-fintech-at-client-server-4450316151?position=11&pageNum=0&refId=LEkIerpmViqul8uG46V4pw%3D%3D&trackingId=FmGVVc8D9qlb08cETq6tgA%3D%3D)
+
+---
+
+**4. affirm – Staff Software Engineer, Backend (Search)**  
+*Match Reason:*  
+The role calls for 8+ years of experience and deep expertise in Python/Kotlin, large‑scale distributed systems, and search engines—areas beyond your current experience level. However, your strong foundation in backend architecture, security, and observability could be a stepping stone if you pursue further growth in these domains.
+
+*Tailored CV bullets*  
+- Designed a secure, multi‑tenant AI orchestration platform with a 12‑layer defense pipeline, demonstrating capability to build resilient, large‑scale services.  
+- Implemented observability stack (Prometheus, Grafana, Loki) across Kubernetes clusters, ensuring proactive monitoring and rapid incident response.  
+- Developed asynchronous event‑driven workflows in FastAPI, achieving sub‑second latency for high‑volume request streams.
+
+*Job context:*  
+affirm’s Search team builds the core recommendation and discovery engine for a global marketplace. The position demands ownership of technical strategy, high‑availability systems, and cross‑team collaboration. It’s a senior role with significant influence over product direction and infrastructure.
+
+[View the full listing](https://www.linkedin.com/jobs/view/staff-software-engineer-backend-search-at-affirm-4443430834?position=2&pageNum=0&refId=LEkIerpmViqul8uG46V4pw%3D%3D&trackingId=BHYfkYhA52GRmkOLk09x%2FA%3D%3D)
+
+---
+
+**5. Amazon Web Services – Software Development Engineer, AWS Config**  
+*Match Reason:*  
+Your experience with distributed services, Kubernetes, and compliance‑focused security pipelines aligns with AWS Config’s mission to enforce security policies at scale. While you lack explicit C# or Java experience, your proficiency in Python, PostgreSQL, and infrastructure‑as‑code suggests you can quickly adapt to AWS’s tooling and languages.
+
+*Tailored CV bullets*  
+- Built a multi‑tenant orchestration engine in FastAPI, processing 10k AI calls per minute with 99.9 % uptime, mirroring the high‑scale evaluation required by AWS Config.  
+- Deployed a 4‑namespace Kubernetes cluster with NetworkPolicies, Prometheus, and Loki, ensuring compliance with internal security standards.  
+- Implemented automated CI/CD pipelines using GitHub Actions, reducing deployment lead time by 70 % and maintaining strict code‑review standards.
+
+*Job context:*  
+The AWS Config Reaction team owns the

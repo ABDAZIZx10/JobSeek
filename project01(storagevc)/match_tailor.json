@@ -1,0 +1,399 @@
+{
+    "match_score": {
+        "final_score": 0.3667,
+        "breakdown": {
+            "skills": {
+                "score": 0.3333333333333333,
+                "matched": 1,
+                "total": 3
+            },
+            "responsibilities": {
+                "score": 0.0,
+                "matches": [
+                    {
+                        "job_responsibility": "Design, implement, and test reliable backend services and APIs.",
+                        "cv_responsibility": "Focused on maintainability and scalable frontend structure",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.6067742109298706
+                    },
+                    {
+                        "job_responsibility": "Develop API design, data modeling, event modeling, and optimize service performance.",
+                        "cv_responsibility": "Developed reusable middleware for API functionality and security",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.42230743169784546
+                    },
+                    {
+                        "job_responsibility": "Own development lifecycle: implementation, testing, deployment, monitoring, and support.",
+                        "cv_responsibility": "Focused on maintainability and scalable frontend structure",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.374839723110199
+                    },
+                    {
+                        "job_responsibility": "Integrate with cross-functional teams, contribute to technical discovery, and learn from code and system feedback.",
+                        "cv_responsibility": "Focused on maintainability and scalable frontend structure",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.25054633617401123
+                    }
+                ]
+            },
+            "experience": {
+                "score": 0.5,
+                "required": 2,
+                "candidate": 1.0
+            },
+            "seniority": 1.0
+        }
+    },
+    "raw_job": {
+        "title": "Software Engineer II, Backend - Platform Team",
+        "company": "Rippling",
+        "location": "Seattle, WA",
+        "date": "1 week ago",
+        "Job Details URL": "https://www.linkedin.com/jobs/view/software-engineer-ii-backend-platform-team-at-rippling-4414574050?position=13&pageNum=0&refId=LEkIerpmViqul8uG46V4pw%3D%3D&trackingId=4pR75XFNVz3j90UYj%2BUVLg%3D%3D",
+        "details": {
+            "num_applicants": null,
+            "description": "About RipplingRippling gives businesses one place to run HR, IT, and Finance. It brings together all of the workforce systems that are normally scattered across a company, like payroll, expenses, benefits, and computers. For the first time ever, you can manage and automate every part of the employee lifecycle in a single system.Take onboarding, for example. With Rippling, you can hire a new employee anywhere in the world and set up their payroll, corporate card, computer, benefits, and even third-party apps like Slack and Microsoft 365—all within 90 seconds.Based in San Francisco, CA, Rippling has raised $1.4B+ from the world’s top investors—including Kleiner Perkins, Founders Fund, Sequoia, Greenoaks, and Bedrock—and was named one of America's best startup employers by Forbes.We prioritize candidate safety. Please be aware that all official communication will only be sent from @Rippling.com addresses.About The Platform TeamThe Platform Engineering team is the invisible engine that powers all of Rippling's integrated products—HR, IT, and Finance. Our mission is to build the core infrastructure, tools, and shared services that allow every other engineering team to ship highly reliable, secure, and globally scalable features with maximum velocity. We manage the foundational components that ensure Rippling's single, unified platform operates efficiently and securely.Our Scope: Foundational Systems for 1,000+ EngineersOperating as a critical scaled team, we own and operate a variety of mission-critical systems that directly support close to 1,000 engineers building products and internal platforms across Rippling. We deliver the most foundational shared systems inside the Platform organization.What You Will DoDesign, implement, and test reliable backend services and APIs that power core product features and business logic at scale. Work across key technical domains, including API design, data modeling, event modeling, and optimizing service performance. Own the development lifecycle for defined features, from implementation and testing to deployment, monitoring, and support in a production environment. Effectively integrate into cross-functional teams, contribute to technical discovery, and rapidly learn from code and system feedback. What You Will Need2+ years of professional experience as a backend engineer, preferably with Python, Go, or a similar production language, and strong experience with relational databases (e.g., PostgreSQL). Care about business impact, balancing technical craft with speed and the bottom line to deliver value quickly. Ability to thrive in fast-paced, dynamic environments, demonstrating resilience and agility in the face of changing product needs. Excellent skills in communicating complex technical ideas with clarity to enable effective collaboration with peers and stakeholders. Additional InformationRippling is an equal opportunity employer. We are committed to building a diverse and inclusive workforce and do not discriminate based on race, religion, color, national origin, ancestry, physical disability, mental disability, medical condition, genetic information, marital status, sex, gender, gender identity, gender expression, age, sexual orientation, veteran or military status, or any other legally protected characteristics, Rippling is committed to providing reasonable accommodations for candidates with disabilities who need assistance during the hiring process. To request a reasonable accommodation, please email accomodations@rippling.comRippling highly values having employees working in-office to foster a collaborative work environment and company culture. For office-based employees (employees who live within a defined radius of a Rippling office), Rippling considers working in the office, at least three days a week under current policy, to be an essential function of the employee's role.This role will receive a competitive salary + benefits + equity. The salary for US-based employees will be aligned with one of the ranges below based on location; see which tier applies to your location here.A variety of factors are considered when determining someone’s compensation–including a candidate’s professional background, experience, and location. Final offer amounts may vary from the amounts listed below.The pay range for this role is:152,000 - 225,000 USD per year(US Tier 1)",
+            "Seniority level": "Entry level",
+            "Employment type": "Full-time",
+            "Job function": "Engineering, Information Technology, and Project Management",
+            "Industries": "Software Development"
+        }
+    }
+}{
+    "match_score": {
+        "final_score": 0.25,
+        "breakdown": {
+            "skills": {
+                "score": 0.0,
+                "matched": 0,
+                "total": 11
+            },
+            "responsibilities": {
+                "score": 0.0,
+                "matches": [
+                    {
+                        "job_responsibility": "Execute software solutions, including design, development, and troubleshooting.",
+                        "cv_responsibility": "Focused on maintainability and scalable frontend structure",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.26358795166015625
+                    },
+                    {
+                        "job_responsibility": "Write secure, high‑quality code with limited guidance.",
+                        "cv_responsibility": "Built a 12-layer defense-in-depth security pipeline including WAF, Kong API Gateway, Keycloak JWT authentication, prompt-injection detection, PII detection, and OPA policy checks",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.3405681848526001
+                    },
+                    {
+                        "job_responsibility": "Use enterprise AI coding assist tools to improve code quality, speed, and productivity; validate outputs via review, testing, and secure coding standards.",
+                        "cv_responsibility": "Integrated multiple AI providers such as Ollama, OpenAI, and Gemini",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.451474666595459
+                    },
+                    {
+                        "job_responsibility": "Design, develop, code, and troubleshoot considering upstream/downstream systems.",
+                        "cv_responsibility": "Focused on maintainability and scalable frontend structure",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.2996496260166168
+                    },
+                    {
+                        "job_responsibility": "Apply tools from the SDLC toolchain, including AI‑assisted development and automation, to enhance automation value.",
+                        "cv_responsibility": "Designed and developed a secure AI orchestration platform supporting multiple AI providers",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.42750006914138794
+                    },
+                    {
+                        "job_responsibility": "Troubleshoot basic‑complexity technical problems.",
+                        "cv_responsibility": "Focused on maintainability and scalable frontend structure",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.22810709476470947
+                    },
+                    {
+                        "job_responsibility": "Gather, analyze, and draw conclusions from large diverse data sets to identify problems and inform decisions for secure, stable development.",
+                        "cv_responsibility": "Focused on maintainability and scalable frontend structure",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.33879736065864563
+                    },
+                    {
+                        "job_responsibility": "Learn and apply system processes, methodologies, and skills for secure, stable code and systems.",
+                        "cv_responsibility": "Built a 12-layer defense-in-depth security pipeline including WAF, Kong API Gateway, Keycloak JWT authentication, prompt-injection detection, PII detection, and OPA policy checks",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.3864127993583679
+                    }
+                ]
+            },
+            "experience": {
+                "score": 0.5,
+                "required": 2,
+                "candidate": 1.0
+            },
+            "seniority": 1.0
+        }
+    },
+    "raw_job": {
+        "title": "Software Engineer II (Java)",
+        "company": "JPMorganChase",
+        "location": "New York, NY",
+        "date": "1 week ago",
+        "Job Details URL": "https://www.linkedin.com/jobs/view/software-engineer-ii-java-at-jpmorganchase-4453687841?position=9&pageNum=0&refId=LEkIerpmViqul8uG46V4pw%3D%3D&trackingId=g%2FRWrQdqJvIIi0yUgi0FLQ%3D%3D",
+        "details": {
+            "num_applicants": null,
+            "description": "Job DescriptionYou're ready to gain the skills and experience needed to grow within your role and advance your career — and we have the perfect software engineering opportunity for you.As a Software Engineer II at JPMorganChase within the Banking Payments division, you are part of an agile team that works to enhance, design, and deliver the software components of the firm's state-of-the-art technology products in a secure, stable, and scalable way. As an emerging member of a software engineering team, you execute software solutions through the design, development, and technical troubleshooting of multiple components within a technical product, application, or system, while gaining the skills and experience needed to grow within your role.Job ResponsibilitiesExecutes standard software solution, design, development, and technical troubleshootingWrites secure and high-quality code using the syntax of at least one programming language with limited guidanceLeverages enterprise-authorized AI coding assist tools within the work environment to improve code quality, delivery speed, and productivity (e.g., code generation/refactoring, unit test creation, documentation), while validating outputs through peer review, automated testing, and secure coding standards.Designs, develops, codes, and troubleshoots with consideration of upstream and downstream systems and technical implicationsApplies knowledge of tools within the Software Development Life Cycle toolchain, including enterprise-authorized AI-assisted development and automation capabilities, to improve the value realized by automationApplies technical troubleshooting to breakdown solutions and solve technical problems of basic complexityGathers, analyzes, and draws conclusions from large, diverse data sets to identify problems and contribute to decision-making in service of secure, stable application developmentLearns and applies system processes, methodologies, and skills for the development of secure, stable code and systemsRequired Qualifications, Capabilities, And SkillsFormal training or certification on software engineering concepts and 2+ years applied experience Hands-on practical experience in system design, application development, testing, and operational stabilityExperience in developing, debugging, and maintaining code in a large corporate environment with one or more modern programming languages and database querying languagesProficiency in Java programming, with Spring Boot, Microservices and AWS Cloud knowledgeHands-on experience using enterprise-authorized AI-assisted software development tools within the work environment (e.g., for coding, testing, troubleshooting, or documentation) with demonstrated ability to critically evaluate and validate AI-generated outputs.Understanding of responsible AI use in engineering workflows, including data sensitivity considerations, secure handling of inputs/outputs, and adherence to resiliency and security expectations.Experience across the whole Software Development Life CycleExposure to agile methodologies such as CI/CD, Application Resiliency, and SecurityAbout UsPreferred qualifications, capabilities, and skillsChase is a leading financial services firm, helping nearly half of America's households and small businesses achieve their financial goals through a broad range of financial products. Our mission is to create engaged, lifelong relationships and put our customers at the heart of everything we do. We also help small businesses, nonprofits and cities grow, delivering solutions to solve all their financial needs.We offer a competitive total rewards package including base salary determined based on the role, experience, skill set and location. Those in eligible roles may receive commission-based pay and/or discretionary incentive compensation, paid in the form of cash and/or forfeitable equity, awarded in recognition of individual achievements and contributions. We also offer a range of benefits and programs to meet employee needs, based on eligibility. These benefits include comprehensive health care coverage, on-site health and wellness centers, a retirement savings plan, backup childcare, tuition reimbursement, mental health support, financial coaching and more. Additional details about total compensation and benefits will be provided during the hiring process.We recognize that our people are our strength and the diverse talents they bring to our global workforce are directly linked to our success. We are an equal opportunity employer and place a high value on diversity and inclusion at our company. We do not discriminate on the basis of any protected attribute, including race, religion, color, national origin, gender, sexual orientation, gender identity, gender expression, age, marital or veteran status, pregnancy or disability, or any other basis protected under applicable law. We also make reasonable accommodations for applicants' and employees' religious practices and beliefs, as well as mental health or physical disability needs. Visit our FAQs for more information about requesting an accommodation.Equal Opportunity Employer/Disability/VeteransAbout The TeamOur Consumer & Community Banking division serves our Chase customers through a range of financial services, including personal banking, credit cards, mortgages, auto financing, investment advice, small business loans and payment processing. We're proud to lead the U.S. in credit card sales and deposit growth and have the most-used digital solutions – all while ranking first in customer satisfaction.",
+            "Seniority level": "Not Applicable",
+            "Employment type": "Full-time",
+            "Job function": "Engineering and Information Technology",
+            "Industries": "Financial Services"
+        }
+    }
+}{
+    "match_score": {
+        "final_score": 0.1875,
+        "breakdown": {
+            "skills": {
+                "score": 0.0,
+                "matched": 0,
+                "total": 8
+            },
+            "responsibilities": {
+                "score": 0.0,
+                "matches": [
+                    {
+                        "job_responsibility": "Design business-critical backend services using modern C# and .Net",
+                        "cv_responsibility": "Focused on maintainability and scalable frontend structure",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.47550925612449646
+                    },
+                    {
+                        "job_responsibility": "Develop distributed systems that process large volumes of data with demanding performance and reliability",
+                        "cv_responsibility": "Focused on maintainability and scalable frontend structure",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.40995171666145325
+                    },
+                    {
+                        "job_responsibility": "Participate in the full software lifecycle: technical design, architecture, implementation, optimisation, and production delivery",
+                        "cv_responsibility": "Used a modular architecture with reusable components",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.3475036025047302
+                    },
+                    {
+                        "job_responsibility": "Collaborate with colleagues to build elegant, robust software",
+                        "cv_responsibility": "Focused on maintainability and scalable frontend structure",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.416862815618515
+                    },
+                    {
+                        "job_responsibility": "Continuously improve systems and engineering practices",
+                        "cv_responsibility": "Focused on maintainability and scalable frontend structure",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.39464688301086426
+                    }
+                ]
+            },
+            "experience": 0,
+            "seniority": 1.0
+        }
+    },
+    "raw_job": {
+        "title": "Software Engineer - FinTech",
+        "company": "Client Server",
+        "location": "Columbus, OH",
+        "date": "1 week ago",
+        "Job Details URL": "https://www.linkedin.com/jobs/view/software-engineer-fintech-at-client-server-4450316151?position=11&pageNum=0&refId=LEkIerpmViqul8uG46V4pw%3D%3D&trackingId=FmGVVc8D9qlb08cETq6tgA%3D%3D",
+        "details": {
+            "num_applicants": null,
+            "description": "Software Engineer / Developer Columbus, Ohio to $160,000Opportunity to join a rapidly growing FinTech that is building sophisticated technology for the global Investment Management industry. Backed by significant funding and working alongside leading Hedge Fund partners, the company is solving complex engineering problems at scale and is investing heavily in the continued evolution of its core platform.This is an opportunity for an intellectually curious Software Engineer to join a high-calibre team where technical excellence is valued and engineers are trusted to influence architecture, design and product direction.As a Software Engineer you will design and develop business-critical backend services predominately using modern C# and .Net, working on distributed systems that process large volumes of data with demanding performance and reliability requirements. You'll be involved throughout the software lifecycle, from technical design and architecture through to implementation, optimisation and production delivery, collaborating closely with colleagues who share a passion for building elegant, robust software.The environment is particularly well suited to engineers with strong computer science foundations who enjoy tackling challenging problems, debating technical approaches and continuously improving both systems and engineering practices.Location: You'll join colleagues in the new Columbus, Ohio office on a fulltime basis (Monday to Friday).About you:You have achieved a GPA score of above 3.3, having studied at an Ivy League (or top 300 globally) universityYou have expertise with modern software development, C# .Net preferred - although there are also opportunities to cross train from another language or join the C++ / Rust team, Java / Calypso team or Python / Data teamsYou have a good knowledge of software architecture, distributed systems and engineering best practicesYou have a deep understanding of Computer Science fundamentals, including algorithms, data structures, object-oriented design and system designYou have a collaborative approach and a genuine enthusiasm for solving difficult technical problemsYou are a US citizen or hold a valid Green Card (no visa sponsorship available)What's in it for you?Alongside a highly competitive package, you'll gain the opportunity to work on technically demanding systems, collaborate with exceptional engineers, and play a meaningful role in the growth of a business that is still small enough for your contributions to have a visible impact.Salary to $160,000 (negotiable)BonusHealthcareGenerous pension contributionContinuous career development opportunitiesSocial team atmosphere with a range of eventsApply now to find out more about this Software Engineer / Developer opportunity.",
+            "Seniority level": "Associate",
+            "Employment type": "Full-time",
+            "Job function": "Information Technology",
+            "Industries": "Software Development, Technology, Information and Media, and Financial Services"
+        }
+    }
+}{
+    "match_score": {
+        "final_score": 0.1125,
+        "breakdown": {
+            "skills": {
+                "score": 0.14285714285714285,
+                "matched": 1,
+                "total": 7
+            },
+            "responsibilities": {
+                "score": 0.0,
+                "matches": [
+                    {
+                        "job_responsibility": "Set technical strategy for the team over a year‑long timeline and align with key business projects.",
+                        "cv_responsibility": "Focused on maintainability and scalable frontend structure",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.1983647495508194
+                    },
+                    {
+                        "job_responsibility": "Collaborate across product, design, and analytics to manage technical sustainability, risks, and trade‑offs.",
+                        "cv_responsibility": "Focused on maintainability and scalable frontend structure",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.3371553122997284
+                    },
+                    {
+                        "job_responsibility": "Advocate technical solutions and operational processes as a force multiplier for the team.",
+                        "cv_responsibility": "Created full CRUD operations",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.21694238483905792
+                    },
+                    {
+                        "job_responsibility": "Own team operations and availability through monitoring, triage rotations, playbooks, policies, testing, and alerting for on‑call support.",
+                        "cv_responsibility": "Designed an asynchronous orchestration engine with concurrent pre-flight security checks, intent-based routing, and SSE token streaming",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.351299524307251
+                    },
+                    {
+                        "job_responsibility": "Establish code review and design standards, promote them beyond the team via writing and tech talks.",
+                        "cv_responsibility": "Focused on maintainability and scalable frontend structure",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.195537269115448
+                    },
+                    {
+                        "job_responsibility": "Guide team members with feedback and example, developing talent.",
+                        "cv_responsibility": "Developed a tour-management API using Node.js, Express.js, and MongoDB",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.1792316436767578
+                    },
+                    {
+                        "job_responsibility": "Deliver major features, system components, or deprecate existing functionality via a defined technical and execution plan.",
+                        "cv_responsibility": "Developed reusable middleware for API functionality and security",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.3800726532936096
+                    }
+                ]
+            },
+            "experience": {
+                "score": 0.125,
+                "required": 8,
+                "candidate": 1.0
+            },
+            "seniority": 0.25
+        }
+    },
+    "raw_job": {
+        "title": "Staff Software Engineer, Backend (Search)",
+        "company": "Affirm",
+        "location": "Las Vegas, NV",
+        "date": "1 week ago",
+        "Job Details URL": "https://www.linkedin.com/jobs/view/staff-software-engineer-backend-search-at-affirm-4443430834?position=2&pageNum=0&refId=LEkIerpmViqul8uG46V4pw%3D%3D&trackingId=BHYfkYhA52GRmkOLk09x%2FA%3D%3D",
+        "details": {
+            "num_applicants": null,
+            "description": "Affirm is reinventing credit to make it more honest and friendly, giving consumers the flexibility to buy now and pay later without any hidden fees or compounding interest.As we build Affirm's advertising platform and evolve Marketplace into a best in class shopping destination, the ability to route and discover is one of the greatest levers for consumer experiences. Search is one of the highest impact surfaces, and we are building a new team that will own not just the recommendations and search experiences, but also explore opportunities to improve customer experience, monetization, and merchant value. This team will help make Affirm the definitive destination consumers turn to for discovery, understanding, comparing, and shopping through Affirm, and will also lay the foundation for an agentic platform.What You'll Do You will be responsible for setting technical strategy for your team on a year-long time scale, and help your team tie it together with critical, business-impacting projects. You will collaborate across teams in the product development lifecycle by collaborating with product management, design & analytics to ensure technical sustainability, risks and trade-offs are well understood and managed. You will act as a force-multiplier for your team through your definition and advocacy of technical solutions and operational processes. You take ownership of your team’s operations and availability by ensuring you have the right monitoring, triage rotations, playbooks, policies, testing and alerting in place to support “keep the lights on” & on-call efforts. You will foster a culture of quality and ownership on your team by setting code review and design standards for your team, and advocating for them beyond your team through your writing and tech talks. You will help develop talent on your team by providing feedback and guidance, and leading by example.What We Look For You have 8+ years of experience designing, developing and launching backend systems at scale using languages like Python or Kotlin. You have an extensive track record of developing highly available distributed systems using technologies like AWS, MySQL, Spark and Kubernetes. You have experience developing consumer experiences using UI frameworks like React You have 2+ years of experience working in search or related recommendation engines You have experience delivering major features, system components or deprecating existing functionality in a system through the definition of a technical and execution plan. You write high quality code that is easily understood and used by others. You thrive in ambiguity, and are comfortable moving from low level language idioms all the way to the architecture of large systems to understand how they work. Your growth and impact trajectory demonstrates that you have mastered gathering and iterating on feedback from your engineering and cross-functional peers. You have strong verbal and written communication skills that support effective collaboration with our global engineering team. This position requires either equivalent practical experience or a Bachelor’s degree in a related field.Base Pay Grade - PEquity Grade - 13Employees new to Affirm typically come in at the start of the pay range. Affirm focuses on providing a simple and transparent pay structure which is based on a variety of factors, including location, experience and job-related skills.Base pay is part of a total compensation package that may include equity rewards, monthly stipends for health, wellness and tech spending, and benefits (including 100% subsidized medical coverage, dental and vision for you and your dependents.)USA Pacific base pay range (CA, WA, NY, NJ, CT): $230,000 - $290,000USA Sapphire base pay range (all other U.S. states): $204,00 - $264,000 Affirm is proud to be a remote-first company! The majority of our roles are remote and you can work almost anywhere within the country of employment. Affirmers in proximal roles have the flexibility to work remotely, but will occasionally be required to work out of their assigned Affirm office. A limited number of roles remain office-based due to the nature of their job responsibilities.BenefitsWe’re extremely proud to offer competitive benefits that are anchored to our core value of people come first. Some key highlights of our benefits package include:Health care coverage - Affirm covers all premiums for all levels of coverage for you and your dependents Flexible Spending Wallets - generous stipends for spending on Technology, Food, various Lifestyle needs, and family forming expensesTime off - competitive vacation and holiday schedules allowing you to take time off to rest and rechargeESPP - An employee stock purchase plan enabling you to buy shares of Affirm at a discountWe believe It’s On Us to provide an inclusive interview experience for all, including people with disabilities. We are happy to provide reasonable accommodations to candidates in need of individualized support during the hiring process.[For U.S. positions that could be performed in Los Angeles or San Francisco] Pursuant to the San Francisco Fair Chance Ordinance and Los Angeles Fair Chance Initiative for Hiring Ordinance, Affirm will consider for employment qualified applicants with arrest and conviction records.By clicking \"Submit Application,\" you acknowledge that you have read Affirm's Global Candidate Privacy Notice and hereby freely and unambiguously give informed consent to the collection, processing, use, and storage of your personal information as described therein.",
+            "Seniority level": "Mid-Senior level",
+            "Employment type": "Full-time",
+            "Job function": "Engineering and Information Technology",
+            "Industries": "Financial Services"
+        }
+    }
+}{
+    "match_score": {
+        "final_score": 0.1042,
+        "breakdown": {
+            "skills": {
+                "score": 0.0,
+                "matched": 0,
+                "total": 15
+            },
+            "responsibilities": {
+                "score": 0.0,
+                "matches": [
+                    {
+                        "job_responsibility": "Design, build, and operate high-scale, highly available distributed services for AWS Config Compliance and Reporting",
+                        "cv_responsibility": "Focused on maintainability and scalable frontend structure",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.37015512585639954
+                    },
+                    {
+                        "job_responsibility": "Own solutions across design, implementation, deployment, monitoring, and support",
+                        "cv_responsibility": "Developed reusable middleware for API functionality and security",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.41894811391830444
+                    },
+                    {
+                        "job_responsibility": "Improve platform scalability, reliability, and cost efficiency with customer adoption",
+                        "cv_responsibility": "Focused on maintainability and scalable frontend structure",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.477875292301178
+                    },
+                    {
+                        "job_responsibility": "Build new capabilities to evaluate, enforce, and remediate compliance across AWS resources",
+                        "cv_responsibility": "Built a 12-layer defense-in-depth security pipeline including WAF, Kong API Gateway, Keycloak JWT authentication, prompt-injection detection, PII detection, and OPA policy checks",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.3172321617603302
+                    },
+                    {
+                        "job_responsibility": "Participate in on-call rotation, drive root cause analysis, and improve operational health",
+                        "cv_responsibility": "Created full CRUD operations",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.29711106419563293
+                    },
+                    {
+                        "job_responsibility": "Collaborate with partner teams across Config, Resource Explorer, Security Hub, and governance ecosystem",
+                        "cv_responsibility": "Designed and developed a secure AI orchestration platform supporting multiple AI providers",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.36890754103660583
+                    },
+                    {
+                        "job_responsibility": "Contribute to engineering culture through code reviews, design discussions, and peer mentorship",
+                        "cv_responsibility": "Focused on maintainability and scalable frontend structure",
+                        "similarity": 0.0,
+                        "passed_Threshhold": false,
+                        "Raw Similarity": 0.1610293984413147
+                    }
+                ]
+            },
+            "experience": {
+                "score": 0.3333333333333333,
+                "required": 3,
+                "candidate": 1.0
+            },
+            "seniority": 0.25
+        }
+    },
+    "raw_job": {
+        "title": "Software Development Engineer, AWS Config, AWS Config",
+        "company": "Amazon Web Services (AWS)",
+        "location": "Arlington, VA",
+        "date": "1 day ago",
+        "Job Details URL": "https://www.linkedin.com/jobs/view/software-development-engineer-aws-config-aws-config-at-amazon-web-services-aws-4455918230?position=5&pageNum=0&refId=LEkIerpmViqul8uG46V4pw%3D%3D&trackingId=8bSH%2F%2FsU%2B5kp1FoEnh7lGA%3D%3D",
+        "details": {
+            "num_applicants": null,
+            "description": "DescriptionAre you a software development engineer who wants to build the systems that hundreds of thousands of AWS customers rely on to keep their cloud environments secure and compliant? The AWS Config Reaction team is looking for an SDEto work across our core compliance platform — including the rules evaluation engine, conformance packs, advanced query, aggregators, and automated remediation.AWS Config is how customers enforce security policies, detect misconfigurations, and maintain compliance with frameworks like PCI-DSS, HIPAA, and FedRAMP — both reactively and proactively, across entire AWS Organizations. Our platform continuously assesses millions of resources across thousands of accounts, aggregates compliance data at org scale, enables ad-hoc resource querying, and automates remediation — powering compliance at scale for enterprises worldwide.You'll own critical infrastructure end-to-end: designing, building, and operating distributed systems that evaluate resource configurations at massive scale across every AWS Region. Work on one of the largest configuration compliance platforms in the world Full breadth of work: scaling the evaluation engine, extending conformance packs and aggregation, building new customer-facing capabilities, and driving operational excellence Tenured team with strong engineers, a dedicated PE, and a collaborative leadership structure Low operational noise — most of your time is spent building, not firefighting High autonomy with real ownership over what you ship and how you operate itKey job responsibilities Design, build, and operate high-scale, highly available distributed services that power the AWS Config Compliance and Reporting platforms Own solutions across the full lifecycle: design, implementation, deployment, monitoring, and support Improve platform scalability, reliability, and cost efficiency as customer adoption and evaluation volume grow Build new capabilities that expand how customers evaluate, enforce, and remediate compliance across their AWS resources Participate in on-call rotation, drive root cause analysis, and continuously improve operational health Collaborate with partner teams across Config, Resource Explorer, Security Hub, and the broader AWS governance ecosystem Contribute to a strong engineering culture through rigorous code reviews, design discussions, and technical mentorship of peersA day in the lifeAs an SDE on the Config Reaction team, you'll spend your time designing and building the distributed systems that utilize and evaluate compliance, aggregate inventory and compliance data and enable advanced querying across customer infrastructure at scale. On any given day, you might be writing a design document for a new aggregation capability, diving deep into performance bottlenecks in the query pipeline, or reviewing code with teammates. You'll work closely with tenured engineers and a dedicated Principal Engineer who supports the platform directly.Your customers are both external — the hundreds of thousands of AWS accounts running Conformance Packs to enforce security and compliance policies — and internal, as other AWS services like Security Hub, Control Tower, and Audit Manager depend on the aggregation and query infrastructure you build and operate. When something needs attention operationally, you'll investigate, fix forward, and drive the root cause so the team doesn't see the same issue twice.The team operates with high autonomy. You'll own your projects end-to-end, collaborate across team boundaries when work touches adjacent services like Config Rules, Resource Explorer, or Weirwood, and have the space to propose and drive improvements to how the platform works and how the team operates.About The TeamThe Config Reaction team owns the services that run on top of Config Recording and Config Rules — a service used by enterprise customers managing millions of resources across thousands of accounts and multiple regions. We build the systems that enable customers to continuously assess compliance, detect drift, and enforce security policy across their entire AWS environment.Our team puts a high value on work-life balance. Striking a healthy balance between your personal and professional life is crucial to your happiness and success here, which is why we aren't focused on how many hours you spend at work or online. Instead, we're happy to offer a flexible schedule so you can have a more productive and well-balanced life—both in and outside of work.Basic Qualifications 3+ years of non-internship professional software development experience 2+ years of non-internship design or architecture (design patterns, reliability and scaling) of new and existing systems experience 1+ years of software development engineer or related occupational experience 1+ years of designing and developing large-scale, multi-tiered, multi-threaded, embedded or distributed software applications, tools, systems, and services using: C#, C++, Java, or Perl experience 1+ years of Object Oriented Design experience Bachelor's degree or foreign equivalent in Computer Science, Engineering, Mathematics, or a related field Experience programming with at least one software programming languagePreferred Qualifications 3+ years of full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations experience Bachelor's degree in computer science or equivalentAmazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit https://amazon.jobs/content/en/how-we-hire/accommodations for more information. If the country/region you’re applying in isn’t listed, please contact your Recruiting Partner.The base salary range for this position is listed below. Your Amazon package will include sign-on payments and restricted stock units (RSUs). Final compensation will be determined based on factors including experience, qualifications, and location. Amazon also offers comprehensive benefits including health insurance (medical, dental, vision, prescription, Basic Life & AD&D insurance and option for Supplemental life plans, EAP, Mental Health Support, Medical Advice Line, Flexible Spending Accounts, Adoption and Surrogacy Reimbursement coverage), 401(k) matching, paid time off, and parental leave. Learn more about our benefits at https://amazon.jobs/en/benefits.USA, VA, Arlington - 143,700.00 - 194,400.00 USD annuallyCompany - Amazon Development Center U.S., Inc.Job ID: A10490838",
+            "Seniority level": "Mid-Senior level",
+            "Employment type": "Full-time",
+            "Job function": "Information Technology, Consulting, and Engineering",
+            "Industries": "IT Services and IT Consulting"
+        }
+    }
+}

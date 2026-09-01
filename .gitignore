@@ -1,0 +1,57 @@
+# ===============================
+# 1. Environment & Secrets (NEVER COMMIT)
+# ===============================
+.env
+.env.*
+*.env
+project01(storagevc)/.env
+
+# ===============================
+# 2. Personal & Private Data
+# ===============================
+# Candidate CVs & parsed profile files
+*cv.txt
+cv_profile.json
+*resume*
+
+# ===============================
+# 3. Python & Virtual Environments
+# ===============================
+venv/
+.venv/
+env/
+ENV/
+project01(storagevc)/venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ===============================
+# 4. Databases & Storage
+# ===============================
+# Local Qdrant vector database storage
+qdrant_data/
+**/qdrant_data/
+*.sqlite3
+*.db
+
+# ===============================
+# 5. IDE & OS Metadata
+# ===============================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS / OneDrive metadata
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ===============================
+# 6. Logs & Temp Files
+# ===============================
+*.log
+scratch/

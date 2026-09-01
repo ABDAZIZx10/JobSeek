@@ -1,0 +1,10 @@
+playwright
+beautifulsoup4
+playwright-stealth
+sentence-transformers
+qdrant-client
+dotenv
+keybert
+spacy
+fastapi
+uvicorn
