@@ -1,5 +1,5 @@
 from typing import List, Dict, Any
-from agent.prompts import SYSTEM_PROMPT
+from agent.prompt import SYSTEM_PROMPT
 
 class ConversationMemory:
     def __init__(self, system_prompt: str = SYSTEM_PROMPT):

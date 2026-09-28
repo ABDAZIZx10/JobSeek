@@ -2,7 +2,7 @@
 import asyncio
 import sys
 from helper.helper import run_pipeline
-from fastapi import FastAPI, BackgroundTasks
+from fastapi import FastAPI, BackgroundTasks, File, Form, UploadFile
 from pydantic import BaseModel
 from embed_jobs import Search, match_cv_tailor
 from shapes.RequestShape import MatchShape
@@ -35,7 +35,14 @@ def scrape_and_embed(background_tasks: BackgroundTasks):
     return {"message": "Scraping  and embedding pipeline started in background \n scraped jobs will stored to vector database and ready for matching "}
 
 @app.post("/match-cv")
-def match_cv_endpoint():
-    print("matching candidate cv against all available jobs")
-    result = match_cv_tailor()
+async def match_cv_endpoint(
+    file: UploadFile = File(...),
+    limit: int = Form(5)
+    ):
+    raw_bytes = await file.read()
+    cv_text = raw_bytes.decode("utf-8")
+    result = match_cv_tailor(
+        cv_text=cv_text,
+        limit=limit   
+    )
     return result 

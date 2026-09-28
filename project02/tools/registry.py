@@ -78,11 +78,20 @@ TOOL_SCHEMAS = [
         "type": "function",
         "function": {
             "name": "scrape_jobs",
-            "description": "Scrapes fresh job postings from LinkedIn and embeds them into the database. Use when the database is empty or user explicitly requests fresh data.",
+            "description": "Scrapes fresh LinkedIn jobs and embeds them. Pass short role keywords and an optional location from the user request.",
             "parameters": {
                 "type": "object",
-                "properties": {},
-                "required": []
+                "properties": {
+                    "keywords": {
+                        "type": "string",
+                        "description": "Short LinkedIn search keywords, e.g. 'junior python developer'"
+                    },
+                    "location": {
+                        "type": "string",
+                        "description": "Job location, e.g. 'United States' or 'London'"
+                    }
+                },
+                "required": ["keywords"]
             }
         }
     }
@@ -93,7 +102,9 @@ class ToolRegistry:
     def __init__(self):
         self.state = {
             "last_matches": [],
-            "last_search_results": []
+            "last_search_results": [],
+            "cv_text": None,
+            "cv_profile": None,
         }
         self.tools = {
             "get_job_stats": get_job_stats,

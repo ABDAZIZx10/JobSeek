@@ -2,7 +2,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer
 
 
-def match_responsibilities(cv_resp, job_resp, model,THRESHHOLD=0.65):
+def match_responsibilities(cv_resp, job_resp, model,THRESHHOLD=0.50):
 
     if not job_resp:
         return 1.0
@@ -20,8 +20,6 @@ def match_responsibilities(cv_resp, job_resp, model,THRESHHOLD=0.65):
 
     best_matches = similarities.max(axis=1)
     best_matches_indices = similarities.argmax(axis=1)
-    print(f"best_matches : {best_matches}")
-    print(f"best_matches_indices: {best_matches_indices}")
 
     matches = []
 
@@ -44,7 +42,6 @@ def match_responsibilities(cv_resp, job_resp, model,THRESHHOLD=0.65):
             "Raw Similarity": float(original_similarity)
         })
     score = float(best_matches.mean())
-    print(f"[Responsibilities Match] Evaluated {len(job_resp)} responsibilities | Score: {score:.2f}")
 
     return {
         "score": score,

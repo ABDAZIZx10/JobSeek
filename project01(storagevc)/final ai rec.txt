@@ -1,75 +1,62 @@
-**1. Rippling – Software Engineer II, Backend (Platform Team)**  
-*Match Reason:*  
-Your recent internship built a production‑grade AI orchestration platform on Kubernetes, PostgreSQL, and a multi‑tenant security pipeline. That experience lines up with Rippling’s need for scalable, secure backend services that serve 1,000+ engineers. You already own the full delivery cycle—from design to monitoring—and have hands‑on PostgreSQL Row‑Level Security, which is a direct match for their relational‑database focus.
+**Job #1 – Software Engineer I (Acrisure)**  
+*Match Reason:* Your 1 + year backend experience, proven API design in Node.js/Express, and deep‑security mindset (WAF, OPA, JWT, RLS) align perfectly with Acrisure’s need for robust, policy‑centric APIs and integrations.  
 
-*Tailored CV bullets*  
-- Designed and deployed a 12‑layer security pipeline (WAF, Kong, Keycloak, OPA) for a multi‑tenant AI platform, reducing security incidents by 97 %.  
-- Engineered an asynchronous orchestration engine in FastAPI, achieving 99.9 % request‑latency SLA while handling 10k concurrent AI calls per minute.  
-- Built and maintained a 4‑namespace Kubernetes cluster with NetworkPolicies, Prometheus, Grafana, and Loki, delivering 99.5 % uptime for core services.
+*Tailored CV Bullets*  
+- Designed and deployed a **12‑layer security pipeline** (WAF, Kong, Keycloak, OPA) for an AI orchestration platform, ensuring every API call meets strict compliance—exactly the level of rigor Acrisure demands for underwriting systems.  
+- Built **RESTful APIs** with **JWT authentication** and **row‑level security** in PostgreSQL, mirroring the API‑centric workflows Acrisure requires for policy administration.  
+- Containerized services with **Docker & Kubernetes** and implemented observability via **Prometheus/Grafana/Loki**, matching Acrisure’s emphasis on production‑grade monitoring and operational support.  
 
-*Job context:*  
-Rippling’s Platform Team powers the backbone of HR, IT, and Finance products. The role demands designing reliable APIs, data modeling, and event‑driven services that scale globally. You’ll own the full lifecycle—implementation, testing, deployment, monitoring, and support—while collaborating with cross‑functional teams to ship high‑velocity features.  
-
-[View the full listing](https://www.linkedin.com/jobs/view/software-engineer-ii-backend-platform-team-at-rippling-4414574050?position=13&pageNum=0&refId=LEkIerpmViqul8uG46V4pw%3D%3D&trackingId=4pR75XFNVz3j90UYj%2BUVLg%3D%3D)
+*Job Context:* Acrisure is looking for engineers who can quickly learn the insurance domain (quoting, binding, endorsements) and deliver clean, maintainable code for underwriting and policy administration. The role is on‑site, 4 days a week, and expects strong communication, debugging, and AI‑assisted engineering skills.  
+[View the full listing](https://www.linkedin.com/jobs/view/software-engineer-i-at-acrisure-4441962253?position=5&pageNum=0&refId=RchAA0d6uRIKrtDg4qaDTA%3D%3D&trackingId=j%2Fb5r1we7pozdHY9cXQjaw%3D%3D)
 
 ---
 
-**2. JPMorgan Chase – Software Engineer II (Java)**  
-*Match Reason:*  
-Your backend stack includes Spring Boot and secure REST APIs, which align with JPMorgan’s Java‑centric environment. Your experience with JWT authentication, CI/CD pipelines, and handling large data sets positions you to contribute to secure, high‑quality code in a regulated banking context.
+**Job #2 – Junior Software Engineer (BlueCargo)**  
+*Match Reason:* Your backend chops (Node.js, Express, PostgreSQL) and cloud‑native tooling (Docker, Kubernetes, AWS‑style services) translate well to BlueCargo’s Python/Django stack; your rapid learning curve will help you pick up Django in no time.  
 
-*Tailored CV bullets*  
-- Developed a secure, JWT‑protected REST API in Spring Boot, handling 5k requests per second with <50 ms latency.  
-- Implemented automated unit and integration tests using JUnit and Docker, achieving 90 % code coverage and reducing regression bugs by 40 %.  
-- Leveraged GitHub Actions for CI/CD, ensuring zero‑downtime deployments across multiple environments.
+*Tailored CV Bullets*  
+- Developed a **high‑throughput REST API** with **JWT auth** and **MongoDB** integration, demonstrating the ability to scale services—key for BlueCargo’s audit platform.  
+- Implemented **containerized deployments** using **Docker Compose** and orchestrated with **Kubernetes**, mirroring BlueCargo’s AWS‑centric infrastructure strategy.  
+- Designed **row‑level security** and **audit logging** in PostgreSQL, showcasing your data‑modeling skills that BlueCargo values for production‑grade database design.  
 
-*Job context:*  
-JPMorgan Chase’s Banking Payments division seeks engineers who can design, develop, and troubleshoot secure, scalable services. The role emphasizes enterprise‑authorized AI tools, secure coding standards, and a full software‑development lifecycle. You’ll work in an agile team, delivering features that directly impact millions of customers while maintaining compliance and resilience.
-
-[View the full listing](https://www.linkedin.com/jobs/view/software-engineer-ii-java-at-jpmorganchase-4453687841?position=9&pageNum=0&refId=LEkIerpmViqul8uG46V4pw%3D%3D&trackingId=g%2FRWrQdqJvIIi0yUgi0FLQ%3D%3D)
+*Job Context:* BlueCargo seeks a junior engineer who can build core audit functions, scale Django applications, and become a freight‑industry near‑expert. The role is hybrid, with a modern tech stack (Python/Django, PostgreSQL, AWS Lambda, S3) and a strong emphasis on clean code, testing, and rapid iteration.  
+[View the full listing](https://www.linkedin.com/jobs/view/junior-software-engineer-at-bluecargo-4444655045?position=4&pageNum=0&refId=RchAA0d6uRIKrtDg4qaDTA%3D%3D&trackingId=aCyVaVOPjxZN2hxObLc8ag%3D%3D)
 
 ---
 
-**3. Client Server – Software Engineer (FinTech)**  
-*Match Reason:*  
-Your background in building distributed, secure backend services and orchestrating AI workloads demonstrates a strong foundation in system design and performance tuning—key skills for a FinTech platform that processes large data volumes. While you haven’t listed C#/.NET, your experience with Node.js, FastAPI, and Kubernetes shows adaptability to new tech stacks.
+**Job #3 – Entry‑Level IT & Programmer (Baxter Aerospace)**  
+*Match Reason:* Your solid programming foundation (Node.js, Express, REST, Git) and experience automating security pipelines align with Baxter’s need for clean, maintainable code, automation, and IT support.  
 
-*Tailored CV bullets*  
-- Architected a microservice‑based orchestration engine in FastAPI, scaling to 20k concurrent users with 99.8 % availability.  
-- Implemented multi‑tenant data isolation using PostgreSQL Row‑Level Security, ensuring compliance with GDPR and PCI‑DSS.  
-- Deployed services on Kubernetes with Helm charts, reducing deployment time from 30 min to 5 min and enabling blue‑green rollouts.
+*Tailored CV Bullets*  
+- Created **reusable middleware** for Express APIs, reducing boilerplate and improving maintainability—an approach that can be translated to scripting and automation tools at Baxter.  
+- Leveraged **environment variables** and **JWT authentication** to secure APIs, illustrating your ability to write secure, well‑documented code for internal tooling.  
+- Utilized **GitHub** for version control and collaborative development, matching Baxter’s requirement for robust software development practices.  
 
-*Job context:*  
-Client Server is a high‑growth FinTech focused on investment management. The role requires building backend services in C#/.NET (or similar), handling distributed systems, and optimizing performance for large data streams. You’ll collaborate with product and data teams to shape architecture and drive technical excellence in a fast‑paced environment.
-
-[View the full listing](https://www.linkedin.com/jobs/view/software-engineer-fintech-at-client-server-4450316151?position=11&pageNum=0&refId=LEkIerpmViqul8uG46V4pw%3D%3D&trackingId=FmGVVc8D9qlb08cETq6tgA%3D%3D)
+*Job Context:* Baxter Aerospace is looking for an entry‑level talent who can juggle software development, automation scripts, and IT support across Windows and Linux environments. The role emphasizes troubleshooting, documentation, and the ability to learn new technologies quickly.  
+[View the full listing](https://www.linkedin.com/jobs/view/entry-level-it-programmer-at-baxter-aerospace-4456359628?position=3&pageNum=0&refId=RchAA0d6uRIKrtDg4qaDTA%3D%3D&trackingId=a%2Fv1N8CC1Kni%2FGJeJn4kRw%3D%3D)
 
 ---
 
-**4. affirm – Staff Software Engineer, Backend (Search)**  
-*Match Reason:*  
-The role calls for 8+ years of experience and deep expertise in Python/Kotlin, large‑scale distributed systems, and search engines—areas beyond your current experience level. However, your strong foundation in backend architecture, security, and observability could be a stepping stone if you pursue further growth in these domains.
+**Job #4 – Junior Software Engineer (Clark)**  
+*Match Reason:* Your AI orchestration platform showcases a strong focus on audit, security, and high‑trust systems—exactly what Clark needs for its trust‑infrastructure product.  
 
-*Tailored CV bullets*  
-- Designed a secure, multi‑tenant AI orchestration platform with a 12‑layer defense pipeline, demonstrating capability to build resilient, large‑scale services.  
-- Implemented observability stack (Prometheus, Grafana, Loki) across Kubernetes clusters, ensuring proactive monitoring and rapid incident response.  
-- Developed asynchronous event‑driven workflows in FastAPI, achieving sub‑second latency for high‑volume request streams.
+*Tailored CV Bullets*  
+- Engineered a **multi‑tenant AI orchestration engine** with **audit logging** and **per‑tenant quotas**, demonstrating the audit‑centric mindset Clark seeks for its high‑trust workflows.  
+- Implemented **prompt‑injection and PII detection** layers, proving your expertise in building secure, reliable systems where accuracy and security are paramount.  
+- Deployed services on **Kubernetes** with **NetworkPolicies** and monitored via **Prometheus/Grafana/Loki**, aligning with Clark’s emphasis on robust, observable infrastructure.  
 
-*Job context:*  
-affirm’s Search team builds the core recommendation and discovery engine for a global marketplace. The position demands ownership of technical strategy, high‑availability systems, and cross‑team collaboration. It’s a senior role with significant influence over product direction and infrastructure.
-
-[View the full listing](https://www.linkedin.com/jobs/view/staff-software-engineer-backend-search-at-affirm-4443430834?position=2&pageNum=0&refId=LEkIerpmViqul8uG46V4pw%3D%3D&trackingId=BHYfkYhA52GRmkOLk09x%2FA%3D%3D)
+*Job Context:* Clark is building the trust infrastructure for the AI economy, focusing on audit and accounting workflows. The role requires a junior engineer comfortable with full‑stack responsibilities, eager to own larger pieces, and willing to work on‑site in NYC.  
+[View the full listing](https://www.linkedin.com/jobs/view/junior-software-engineer-at-clark-4448394856?position=2&pageNum=0&refId=RchAA0d6uRIKrtDg4qaDTA%3D%3D&trackingId=hlGBwZllJRtORhhz6VpG5A%3D%3D)
 
 ---
 
-**5. Amazon Web Services – Software Development Engineer, AWS Config**  
-*Match Reason:*  
-Your experience with distributed services, Kubernetes, and compliance‑focused security pipelines aligns with AWS Config’s mission to enforce security policies at scale. While you lack explicit C# or Java experience, your proficiency in Python, PostgreSQL, and infrastructure‑as‑code suggests you can quickly adapt to AWS’s tooling and languages.
+**Job #5 – Junior Software Developer (Helic & Co)**  
+*Match Reason:* Your experience delivering clean, testable Node.js code and building RESTful APIs directly maps to Helic & Co’s focus on feature development, bug fixing, and code quality.  
 
-*Tailored CV bullets*  
-- Built a multi‑tenant orchestration engine in FastAPI, processing 10k AI calls per minute with 99.9 % uptime, mirroring the high‑scale evaluation required by AWS Config.  
-- Deployed a 4‑namespace Kubernetes cluster with NetworkPolicies, Prometheus, and Loki, ensuring compliance with internal security standards.  
-- Implemented automated CI/CD pipelines using GitHub Actions, reducing deployment lead time by 70 % and maintaining strict code‑review standards.
+*Tailored CV Bullets*  
+- Developed **CRUD endpoints** with **Express.js** and **Mongoose**, ensuring clean, testable code—a perfect fit for Helic & Co’s emphasis on unit and integration testing.  
+- Created **JWT‑based authentication middleware**, showcasing your ability to write secure, maintainable code that can be reused across projects.  
+- Managed **GitHub repositories** and performed code reviews, aligning with Helic & Co’s collaborative, mentorship‑driven culture.  
 
-*Job context:*  
-The AWS Config Reaction team owns the
+*Job Context:* Helic & Co seeks a junior developer who can write clean, testable code, fix bugs, and participate in agile ceremonies. The role is a great fit for someone eager to grow in a supportive environment while contributing to production code.  
+[View the full listing](https://www.linkedin.com/jobs/view/junior-software-developer-at-helic-co-4462401424?position=1&pageNum=0&refId=RchAA0d6uRIKrtDg4qaDTA%3D%3D&trackingId=eurEHsqDXtAMXlPUsVc28w%3D%3D)

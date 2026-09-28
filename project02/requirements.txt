@@ -1,0 +1,6 @@
+# Project 02 UI + agent deps. P1 packages come from the shared venv / sys.path.
+streamlit
+groq
+python-dotenv
+pypdf
+python-docx

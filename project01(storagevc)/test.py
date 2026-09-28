@@ -1,7 +1,7 @@
 from utils import json_serializer
 from fetch_LinkedIn_jobs import main as fetch_jobs
 import asyncio
-from embed_jobs import ingest_jobs
+from embed_jobs import ingest_jobs, Search
 from matching_engine.match_job import match_job
 from matching_engine.match_responsibilities import match_responsibilities
 import json
@@ -65,49 +65,14 @@ async def test_job_ingesting():
             print(jobs)
         await ingest_jobs(jobs)
 
-    
-def test_search_function():
-    from embed_jobs import Search, embed_job
-    from model_provider import get_model
-    from qDrantStore import connect, SearchVector
-    
-    print("\n--- 1. Testing Search() directly from embed_jobs.py ---")
-    try:
-        results = Search(query="Python backend", limit=5)
-        print("Search() returned:", results)
-    except Exception as e:
-        print(f"Direct Search() failed with error: {type(e).__name__}: {e}")
 
-    print("\n--- 2. Inspecting raw Qdrant query_points output structure & search relevance ---")
-    client = connect()
-    model = get_model()
-    
-    queries = [
-            "Miami software engineer"
-        ]
-    for q in queries:
-        print(f"\n{'='*20} Testing Query: '{q}' {'='*20}")
-        vec = embed_job(q, model)
-        raw = SearchVector(limit=5, client=client, QueryVector=vec)
-        
-        print(f"Type of raw return from SearchVector: {type(raw)}")
-        print(f"Attributes / repr: points count = {len(raw.points) if hasattr(raw, 'points') else 'no points attr'}")
-        
-        if hasattr(raw, 'points'):
-            for idx, pt in enumerate(raw.points, 1):
-                payload = pt.payload or {}
-                # Check both payload schemas (flat vs nested raw_job/profile)
-                raw_job = payload.get("raw_job") if isinstance(payload.get("raw_job"), dict) else payload
-                title = raw_job.get("title") or payload.get("title")
-                company = raw_job.get("company") or payload.get("company")
-                score = pt.score
-                print(f"  #{idx} [Cosine Score: {score:.4f}] {title} @ {company}")
-                details = raw_job.get("details") or {}
-                desc = details.get("description", "")
-                if desc:
-                    print(f"      Snippet: {desc[:120]}...")
+
+
+def test_search():
+    search_results = Search(query = input("job to look for\n"), limit=5)
+    print(search_results)
 
 if __name__ == "__main__":
-    test_search_function()
+    test_search()
 
 

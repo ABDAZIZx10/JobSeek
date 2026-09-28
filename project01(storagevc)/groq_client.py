@@ -1,6 +1,7 @@
 import json
 from models.CandidateProfile import CandidateShape
 from models.JobProfile import JobProfile
+from models.jobfilters import JobFilters
 from dotenv import load_dotenv
 import os 
 from groq import Groq
@@ -23,13 +24,13 @@ def extract_cv_summary(cv_text: str) -> str:
     """
     
     response = client.chat.completions.create(
-        model=os,
+        model=os.getenv("GENERATION_MODEL"),
         messages=[
-            {"role": "system", "content": f"{os.getenv("SYSTEM_PROMPT")}"},
+            {"role": "system", "content": f"{os.getenv('SYSTEM_PROMPT_RANKING', '')}"},
             {"role":"user", "content": prompt}
         ],
         temperature= 0.2,
-        max_tokens=200
+        max_tokens=4096
     )
     return response.choices[0].message.content.strip()
 
@@ -38,8 +39,7 @@ def generate_tailored_recommendation(cv_text: str, top_matches:list) -> list:
     jobs_summary = ""
     for idx, match in enumerate(top_matches, 1):
         job = match.get("raw_job")
-        jobs_summary += f"\n--- Job #{idx}: {job.get("title")} at {job.get("company")} (more details about the job at '{job.get("Job Details URL")}') ---\n"
-        print(jobs_summary)
+        jobs_summary += f"\n--- Job #{idx}: {job.get('title')} at {job.get('company')} (more details about the job at '{job.get('Job Details URL')}') ---\n"
         details = job.get("details") or {}
         jobs_summary += f"Description: {details.get('description', 'N/A')}\n"
         
@@ -51,7 +51,7 @@ def generate_tailored_recommendation(cv_text: str, top_matches:list) -> list:
         Task:
         For each job listing, provide:
         1. A brief "Match Reason" (why candidate fits this role).
-        2. 2-3 "Tailored CV Bullets" rewritten to target this specific job's requirements.
+        2. 2-3 "Tailored CV Bullets" rewritten to target this specific job's requirements, your claims must be supported by the cv .
         3. keep your tone throughout this response like you are jarvis from the famous movie character iron man from marvel
         4. dont make your answer too long and dont give a very short answer either 
         5. after stating why the job matches you should inform the user with enough details from the job to give the user more context about the job 
@@ -65,6 +65,7 @@ def generate_tailored_recommendation(cv_text: str, top_matches:list) -> list:
             {"role": "user", "content": prompt}
         ],
         temperature=0.4,
+        max_tokens=4096
     )
 
     print(f"total tokens used for recommendation: {response.usage.total_tokens}")
@@ -72,8 +73,18 @@ def generate_tailored_recommendation(cv_text: str, top_matches:list) -> list:
 
 
 def generate_job_description(job: dict, client:Groq):
-    from embed_jobs import build_job_text
-    job_description = build_job_text(job)
+
+    job_for_groq = {
+    "title": job.get("title"),
+    "details": {
+        "description": job.get("details", {}).get("description"),
+        "Seniority level": job.get("details", {}).get("Seniority level"),
+        "Job function": job.get("details", {}).get("Job function"),
+        "Industries": job.get("details", {}).get("Industries"),
+    }
+}
+
+    
     prompt = f"""You are a structured information extraction component.
 
             Your ONLY task is to extract information from the provided job posting.
@@ -81,6 +92,8 @@ def generate_job_description(job: dict, client:Groq):
             Rules:
             - Do Not Leave the responsibilities field empty even if is unclear, in case of any confusion  generate  from the general context of the job posting
             - The responsibilities field should not be a huge blob a responsibility should short  and clear , seperate every long and complex responsibility into short and clear one  
+            -For experience ranges, return the maximum number of years.For example, "0–2 years" -> 2.
+            -Input for seniority should be 'entry level', 'junior', 'mid', 'mid-senior level', 'senior', 'lead', 'manager' or 'director' 
             - Return ONLY the requested JSON object.
             - Do not explain your answer.
             - Do not add fields.
@@ -90,7 +103,7 @@ def generate_job_description(job: dict, client:Groq):
             - If information is missing, return null.
             - If a list has no items, return [].
             - Only include technologies explicitly mentioned.
-            - Separate required and preferred information. \n here is the job details {job_description}"""
+            - Separate required and preferred information. \n here is the job details {job_for_groq}"""
     
     response = client.chat.completions.create(
         model=os.getenv("GENERATION_MODEL"),
@@ -108,10 +121,11 @@ def generate_job_description(job: dict, client:Groq):
                 "name": "job_profile", 
                 "schema" : JobProfile.model_json_schema()
                 }
-        }
+        },
+        max_tokens=4096
     )
     result =  response.choices[0].message.content  
-    print("total  tokens used:", response.usage.total_tokens)
+    print("(job description)  total  tokens used:", response.usage.total_tokens)
     job_profile = JobProfile.model_validate_json(result)
     return job_profile 
 
@@ -155,8 +169,61 @@ def generate_cv_description(cv:str,client:Groq):
                 "name": "job_profile", 
                 "schema" : CandidateShape.model_json_schema()
                 }
-        }
+        },
+        max_tokens=4096
     )
     result =  response.choices[0].message.content  
     cv_profile = CandidateShape.model_validate_json(result)
     return cv_profile
+
+def extract_job_filters(query: str, client: Groq) -> JobFilters:
+    prompt = f"""
+    Extract hard constraints from the following job search query.
+
+    Hard constraints include:
+    - location
+    - remote status
+    - seniority
+    - minimum/maximum salary
+    - visa sponsorship
+    - security clearance
+    - maximum job age
+
+    Do NOT include skills, technologies, job titles, domains, or responsibilities
+    in the filters. Those belong to the semantic query.
+
+    If a constraint is not explicitly stated, return null.
+    Return ONLY the requested JSON object.
+
+    User query:
+    {query}
+    """
+
+    response = client.chat.completions.create(
+        model=os.getenv("GENERATION_MODEL"),
+        messages=[
+            {
+                "role": "system",
+                "content": """
+                You are a structured job-search query extraction component.
+                Extract only explicit hard constraints.
+                Never infer missing constraints.
+                Return only data matching the provided JSON schema.
+                """
+            },
+            {"role": "user", "content": prompt}
+        ],
+        response_format={
+            "type": "json_schema",
+            "json_schema": {
+                "name": "job_filters",
+                "schema": JobFilters.model_json_schema()
+            }
+        },
+        temperature=0,
+        max_tokens=4096
+    )
+
+    result = response.choices[0].message.content
+    print("(filters generation) total  tokens used:", response.usage.total_tokens)
+    return JobFilters.model_validate_json(result)

@@ -1,3 +1,4 @@
+from  urllib.parse import quote_plus
 import json
 import asyncio
 from playwright.async_api import async_playwright
@@ -5,12 +6,21 @@ from playwright_stealth import Stealth
 from fetch_specific_LinkiedIn_job import fetch as fetch_specific_job
 from utils import safe_text, safe_attr, log_job
 
-SEARCH_URL = (
-    "http://linkedin.com/jobs/search?keywords=entry%20level%20or%20junior%20software%20engineer%20&location=United%20States&geoId=103644278&position=1&pageNum=0"
-)
+def build_search_url(keywords: str, location: str) -> str:
+    return (
+        "https://www.linkedin.com/jobs/search"
+        f"?keywords={quote_plus(keywords)}"
+        f"&location={quote_plus(location)}"
+        "&position=1&pageNum=0"
+    )
+    
 
 
-async def main():
+
+async def main(
+    keywords: str = "junior software engineer",
+    location: str = "United States",
+):
     linked_in_data = {"count": 0, "data": []}
 
     async with Stealth().use_async(async_playwright()) as p:
@@ -18,11 +28,13 @@ async def main():
         list_page = await browser.new_page()
         detail_page = await browser.new_page()
 
-        await list_page.goto(SEARCH_URL)
+        search_url = build_search_url(keywords, location)
+        print("scraping url:", search_url)
+        await list_page.goto(search_url)
 
         job_cards = list_page.locator("ul.jobs-search__results-list > li")
         linked_in_data["count"] = min(await job_cards.count(), 9)
-        print(linked_in_data["count"])
+        print(f'{linked_in_data["count"]} jobs to scrape ')
 
         for i in range(linked_in_data["count"]):
             card = job_cards.nth(i)
@@ -48,7 +60,6 @@ async def main():
                     continue
             log_job(i, linked_in_data["count"], job_info)
             linked_in_data["data"].append(job_info)
-            print("2 seconds sleep to avoid being blocked")
             await asyncio.sleep(2)
 
         await browser.close()
