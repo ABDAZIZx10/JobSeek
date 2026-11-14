@@ -1,0 +1,20 @@
+services:
+  qdrant_database:
+    image: qdrant/qdrant:latest
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - ./project01(storagevc)/qDrant/qdrant_data:/qdrant/storage
+  
+  streamlit:
+    build: .
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    volumes:
+      - ./project02:/app/project02
+      - ./project01(storagevc):/app/project01(storagevc)
+
+

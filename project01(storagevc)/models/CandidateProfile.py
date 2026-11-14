@@ -18,15 +18,26 @@ class Education(BaseModel):
 
     
     
-    
+class Project(BaseModel):
+    name: str
+    description: str | None = None
+    technologies: list[str] = []
     
 class CandidateShape(BaseModel):
-    target_roles: list[str]
+    target_roles: list[str] 
     skills: list[str]
     experience_years: float | None
     experience: list[Experience]
-    education: list[Education]
-    certifications: list[str]
-    seniority: str
+    education: list[Education] | None
+    certifications: list[str] | None
+    seniority: str | None
+    full_name: str | None = None
+    location: str | None = None
+    languages: list[str] | None = None
+    summary: str | None = None          # 1–2 sentence headline, not the whole CV
+    projects: list[Project] | None = None
+    github: str | None = None
+    linkedin: str | None = None
+
     
 

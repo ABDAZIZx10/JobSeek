@@ -15,7 +15,6 @@ def extract_cv_text(uploaded_file) -> str:
         text = "\n".join((page.extract_text() or "") for page in reader.pages)
     elif name.endswith(".docx"):
         from docx import Document
-
         doc = Document(BytesIO(data))
         text = "\n".join(p.text for p in doc.paragraphs)
     else:

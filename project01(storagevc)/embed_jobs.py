@@ -150,9 +150,10 @@ async def ingest_jobs(jobs_list:list):
 
         sparse_vector = sparse_embedding(sparse_model=sparse_model,job_text=sparse_text)
         storeVector(client, vector={"dense": dense_vector, "sparse": sparse_vector}, job=payload)                  
-        print(f"job number: {job_index} embedded and stored")
-        print("waiting for 30 seconds since llm usage is heavy  to avoid hitting (8000) TPM limit ")
-        await asyncio.sleep(30)
+        if jobs_list.index(job) == len(jobs_list) - 1 :
+            print(f"job number: {job_index} embedded and stored")
+            print("waiting for 30 seconds since llm usage is heavy  to avoid hitting (8000) TPM limit ")
+            await asyncio.sleep(30)
 
 
 def match_cv_tailor(cv_text: str = None, limit=5):

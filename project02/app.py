@@ -34,13 +34,8 @@ if uploaded is not None:
                 f"[System] User uploaded a CV ({len(cv_text)} characters). "
                 "It is stored for match_all_jobs and tailor_cv. Confirm if asked."
             )
-            st.session_state.agent.memory.add_user_message(
-                f"Here is my cv text: \n\n\t{cv_text}"
-            )
-            st.session_state.agent.memory.add_assistant_message(
-                content="Got it — your CV is loaded and ready for matching."
-            )
             st.session_state.agent.registry.state["cv_profile"] = None
+            st.session_state.agent.registry.state["cv_overrides"] = {}
             st.session_state.cv_file_id = file_id
             st.success(f"CV loaded: {uploaded.name} ({len(cv_text)} characters)")
         except Exception as e:

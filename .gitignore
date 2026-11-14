@@ -3,6 +3,7 @@
 # ===============================
 .env
 .env.*
+!.env.example
 *.env
 project01(storagevc)/.env
 
@@ -13,6 +14,13 @@ project01(storagevc)/.env
 *cv.txt
 cv_profile.json
 *resume*
+message.txt
+final ai rec.txt
+match_tailor.json
+responsibilities.json
+job_profile.json
+linkedIn_data.json
+*.xlsx
 
 # ===============================
 # 3. Python & Virtual Environments

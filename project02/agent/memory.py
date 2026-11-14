@@ -26,8 +26,13 @@ class ConversationMemory:
             "content": content
         })
 
-    def get_messages(self) -> List[Dict[str, Any]]:
-        return self.messages
+    def get_messages(self, max_messages : int = 20) -> List[Dict[str, Any]]:
+        history = self.messages[1:]
+        if len(history) > max_messages:
+            history = history[-max_messages:]
+        while history and history[0]["role"] != "user":
+                history = history[1:]
+        return [self.messages[0]] + history
 
     def clear(self):
         self.messages = [{"role": "system", "content": self.system_prompt}]

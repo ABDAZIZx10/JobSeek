@@ -147,10 +147,12 @@ def SearchVector(
 
 def connect():
     load_dotenv()
-    os.environ["NO_PROXY"] = "127.0.0.1,localhost"
-    os.environ["no_proxy"] = "127.0.0.1,localhost"
+    host = os.getenv("HOST", "127.0.0.1")
+    port = os.getenv("PORT", "6333")
+    os.environ["NO_PROXY"] = f"{host},127.0.0.1,localhost"
+    os.environ["no_proxy"] = os.environ["NO_PROXY"]
     client = QdrantClient(
-        url="http://127.0.0.1:6333"
+        url=f"http://{host}:{port}"
     )
     
     COLLECTION_NAME = os.getenv("COLLECTION_NAME")

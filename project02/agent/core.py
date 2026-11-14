@@ -53,7 +53,7 @@ class Agent:
                     on_progress(f"`{name}` finished")
                 summary = result if len(result) < 300 else result[:300] + "..."
                 _safe_print(f"step {step + 1} ran tool: {name} | {summary}")
-                self.memory.add_tool_result(tool_call.id, result)
+                self.memory.add_tool_result(tool_call.id, result[:1500])
 
         stop_message = "stopped: too many tool steps."
         _safe_print(f"final: {stop_message}")

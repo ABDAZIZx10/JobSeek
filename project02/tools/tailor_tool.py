@@ -1,3 +1,4 @@
+from tools.profile_tool import apply_overrides
 import os
 from qDrantStore import connect
 from matching_engine.match_job import match_job
@@ -20,7 +21,9 @@ def match_all_jobs(limit: int = 5, state: dict = None):
                 client=client,
             ).model_dump()
 
+        
         cv_profile = state["cv_profile"]
+        apply_overrides(cv_profile, state.get("cv_overrides", {}))
         qdrant = connect()
         collection = os.getenv("COLLECTION_NAME", "linkedIn_jobs")
 

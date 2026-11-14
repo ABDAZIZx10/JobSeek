@@ -1,0 +1,6 @@
+.env
+**/.env
+**/qdrant_data
+**/*linkedIn_data.json
+**/final ai rec.txt
+**/match_tailor.json
