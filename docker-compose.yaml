@@ -13,6 +13,12 @@ services:
       - "8501:8501"
     env_file:
       - .env
+    environment:
+      HOST: qdrant_database
+      PORT: "6333"
+      COLLECTION_NAME: linkedIn_jobs
+    depends_on:
+      - qdrant_database
     volumes:
       - ./project02:/app/project02
       - ./project01(storagevc):/app/project01(storagevc)

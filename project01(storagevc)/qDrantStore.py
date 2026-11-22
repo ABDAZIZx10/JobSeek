@@ -1,4 +1,5 @@
 from models.jobfilters import JobFilters
+from pathlib import Path
 from dotenv import load_dotenv
 import os
 from qdrant_client import QdrantClient
@@ -146,7 +147,12 @@ def SearchVector(
     
 
 def connect():
-    load_dotenv()
+    root_env = Path(__file__).resolve().parents[1] / ".env"
+    local_env = Path(__file__).resolve().parent / ".env"
+    if root_env.exists():
+        load_dotenv(dotenv_path=root_env)
+    if local_env.exists():
+        load_dotenv(dotenv_path=local_env, override=True)
     host = os.getenv("HOST", "127.0.0.1")
     port = os.getenv("PORT", "6333")
     os.environ["NO_PROXY"] = f"{host},127.0.0.1,localhost"

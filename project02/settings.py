@@ -14,9 +14,15 @@ P1_ROOT = PROJECT_ROOT / "project01(storagevc)"
 if str(P1_ROOT) not in sys.path:
     sys.path.insert(0, str(P1_ROOT))
 
-ENV_PATH = P1_ROOT / ".env"
+ROOT_ENV = PROJECT_ROOT / ".env"
+P1_ENV = P1_ROOT / ".env"
 
-load_dotenv(dotenv_path=ENV_PATH)
+# Root .env is the documented setup file. An existing project01 .env
+# still wins so a local override keeps working.
+if ROOT_ENV.exists():
+    load_dotenv(dotenv_path=ROOT_ENV)
+if P1_ENV.exists():
+    load_dotenv(dotenv_path=P1_ENV, override=True)
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 

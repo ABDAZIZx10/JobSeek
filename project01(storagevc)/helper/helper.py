@@ -20,8 +20,8 @@ def scrape_worker(keywords: str = "junior software engineer", location: str = "U
         
         
 async def run_pipeline(
-    keywords:str= "junior software developper",
-    location: str = "united states"
+    keywords: str = "junior software engineer",
+    location: str = "United States"
 ):
     jobs = await asyncio.to_thread(scrape_worker, keywords, location)
     

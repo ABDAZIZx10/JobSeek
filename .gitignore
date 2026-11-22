@@ -63,3 +63,6 @@ desktop.ini
 # ===============================
 *.log
 scratch/
+.pytest_cache/
+.mypy_cache/
+*.egg-info/

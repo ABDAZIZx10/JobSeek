@@ -2,10 +2,20 @@ import json
 from models.CandidateProfile import CandidateShape
 from models.JobProfile import JobProfile
 from models.jobfilters import JobFilters
+from pathlib import Path
 from dotenv import load_dotenv
 import os 
 from groq import Groq
-load_dotenv()
+
+_P1_DIR = Path(__file__).resolve().parent
+_ROOT_ENV = _P1_DIR.parent / ".env"
+_P1_ENV = _P1_DIR / ".env"
+if _ROOT_ENV.exists():
+    load_dotenv(dotenv_path=_ROOT_ENV)
+if _P1_ENV.exists():
+    load_dotenv(dotenv_path=_P1_ENV, override=True)
+
+
 def get_groq_client():
     
     return Groq(api_key=os.getenv("GROQ_API_KEY"))

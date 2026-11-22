@@ -1,0 +1,16 @@
+.env
+**/.env
+qDrant/qdrant_data
+*linkedIn_data.json
+final ai rec.txt
+match_tailor.json
+cv_profile.json
+job_profile.json
+responsibilities.json
+resources/cv.txt
+*resume*
+*.xlsx
+__pycache__
+venv
+.venv
+.git

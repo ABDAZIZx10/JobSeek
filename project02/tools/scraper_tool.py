@@ -4,7 +4,7 @@ from helper.helper import run_pipeline
 
 def scrape_jobs(
     keywords:str ="junior software developper",
-    location:str = " united states"
+    location:str = "United States"
 ):
     """Runs the scraping & ingestion pipeline."""
     try:
